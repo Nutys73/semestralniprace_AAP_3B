@@ -75,6 +75,23 @@ td {
 tr:nth-child(even) {
     background-color: #e8dfca;
 }
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #b99a5c;
+    border-radius: 5px;
+}
+ 
+input[type="submit"] {
+    background-color: #315b3e;
+    color: white;
+    cursor: pointer;
+    padding: 12px 20px;
+}
+ 
+input[type="submit"]:hover {
+    background-color: #987344;
+}
     </style>
 </head>
  
@@ -147,6 +164,32 @@ tr:nth-child(even) {
         <mark>Každé plemeno koně</mark> má své typické
         vlastnosti, vzhled a využití.
     </p>
+ <hr>
  
+<h2>Přihlášení do databáze</h2>
+ 
+<p>Pro přístup do databáze se nejprve přihlas.</p>
+ 
+<form action="" method="post">
+ 
+    <label for="jmeno">Uživatelské jméno:</label>
+    <br>
+    <input type="text" id="jmeno" name="jmeno"
+    placeholder="Zadej své jméno" required>
+ 
+    <br><br>
+ 
+    <label for="heslo">Heslo:</label>
+    <br>
+    <input type="password" id="heslo" name="heslo"
+    placeholder="Zadej heslo" required>
+ 
+    <br><br>
+ 
+    <input type="submit" value="Přihlásit se">
+ 
+</form>
+</body>
+</html>
 </body>
 </html>
